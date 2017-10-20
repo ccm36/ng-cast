@@ -1,14 +1,16 @@
 angular.module('video-player')
 
 .component('videoList', {
-  // bindings
+
   bindings: {
   },
-  controller: function() {
-    // console.log(this);
-  },
-  // controller
 
-  // template
+  controller: function() {
+  },
+  // template: `
+  //   <div>{{$ctrl.selectVideo()}}</div>
+
+  // `
   templateUrl: 'src/templates/videoList.html'
+
 });

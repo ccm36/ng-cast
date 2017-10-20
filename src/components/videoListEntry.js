@@ -3,9 +3,13 @@ angular.module('video-player')
 .component('videoListEntry', {
   // bindings
   bindings: {
+
   },
   controller: function() {
-    // console.log(this);
+    this.test = 'java';
+    this.selectVideo = function() {
+      
+    }
   },
   // controller
 
