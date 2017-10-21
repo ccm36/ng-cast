@@ -1,9 +1,15 @@
-<div class="video-player">
+<div class="video-player" >
   <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="{{'https://www.youtube.com/embed/' + $ctrl.video.id.videoId}}" allowFullScreen></iframe>
-  </div>
-  <div class="video-player-details">
-    <h3>{{$ctrl.video.snippet.title}}</h3>
-    <div>{{$ctrl.video.snippet.description}}</div>
+        <iframe class="embed-responsive-item" src="{{'https://www.youtube.com/embed/' + $ctrl.video.id.videoId}}" allowFullScreen></iframe>
+      </div>
+      <div class="video-player-details">
+        <h3>{{$ctrl.video.snippet.title}}</h3>
+        <div>{{$ctrl.video.snippet.description}}</div>
   </div>
 </div>
+
+<!--
+  /use ng-init to set the state of the video player
+  / use ng-if to set the state of the video player render
+  / do the logic of having a video in the .js file....  where?
+-->

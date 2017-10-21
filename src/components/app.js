@@ -5,22 +5,22 @@ angular.module('video-player')
   bindings: {
 
   },
-  controller: function() {
-    this.videoData = window.exampleVideoData;
-    this.video = this.videoData[0];
+  controller: function(youTube) {
+    this.videos = window.exampleVideoData;
+    this.currentVideo = this.videos[0];
     
-    this.setVideo = (video) => {
-      console.log("clicked");
-      console.log(video);
-      this.video = video;   
-    }
+    this.selectVideo = (video) => {
+      this.currentVideo = video;   
+    };
+    this.searchResults = (query) => {
+      console.log(query);
+      youTube.search(query, this.setVideoData);
+    };
+    this.setVideoData = (data) => {
+      this.videos = data;
+      this.query = "";
+    };
   },
-  // controller
 
-  // template
   templateUrl: 'src/templates/app.html'
 })
-
-// .service('SelectVideo', function() {
-
-// })

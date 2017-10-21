@@ -1,9 +1,10 @@
-<li class="video-list-entry media" ng-click="$ctrl.setVideo($ctrl.video)">
+<li class="video-list-entry media" ng-click="$ctrl.onClick($ctrl.video)">
   <div class="media-left">
-    <img class="media-object" src="https://i.ytimg.com/vi/{{$ctrl.video.id.videoId}}/default.jpg" />
+    <img class="media-object" src="{{$ctrl.video.snippet.thumbnails.default.url}}" />
   </div>
   <div class="media-body">
     <div class="video-list-entry-title" ">{{$ctrl.video.snippet.title}}</div>
+
     <div class="video-list-entry-detail">{{$ctrl.video.snippet.description}}</div>
   </div>
 </li>
