@@ -3,7 +3,8 @@ angular.module('video-player')
 .component('videoList', {
 
   bindings: {
-    videos: '<'
+    videos: '<',
+    setVideo: '<'
   },
 
   controller: function() {

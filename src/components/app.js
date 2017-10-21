@@ -8,6 +8,12 @@ angular.module('video-player')
   controller: function() {
     this.videoData = window.exampleVideoData;
     this.video = this.videoData[0];
+    
+    this.setVideo = (video) => {
+      console.log("clicked");
+      console.log(video);
+      this.video = video;   
+    }
   },
   // controller
 
